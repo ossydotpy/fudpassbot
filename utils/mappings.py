@@ -2,22 +2,28 @@ import os
 
 from utils import image_dir
 
+
+def get_image(name):
+    return os.path.join(image_dir, name)
+
+
 role_image_dict = {
-    'helpers': os.path.join(image_dir, 'og.png'),
-    'fudpassbot': os.path.join(image_dir, 'demonpet.png'),
-    'fudbudwhale': os.path.join(image_dir, 'whale.png'),
-    'fudbudcollector': os.path.join(image_dir, 'collector.png'),
-    'fudbudcertified': os.path.join(image_dir, 'og.png'),
-    'fudpetmaster': os.path.join(image_dir, 'pet-master.png'),
-    'fuddino': os.path.join(image_dir, 'dino.png'),
-    'fudalien': os.path.join(image_dir, 'cyclops.png'),
-    'fuddaddy': os.path.join(image_dir, 'cookie monster.png'),
-    'fudbat': os.path.join(image_dir, 'bat.png'),
-    'fudduck': os.path.join(image_dir, 'duck.png'),
-    'fudmummy': os.path.join(image_dir, 'mummy.png'),
-    'fudbud': os.path.join(image_dir, 'petog.png'),
-    'fudape': os.path.join(image_dir, 'monkey.png'),
-    'fuddog': os.path.join(image_dir, 'dog.png'),
-    'fudbunny king': os.path.join(image_dir, 'bunny.png'),
-    'fudsquad': os.path.join(image_dir, 'petskull.png'),
+    'helpers': get_image('og.png'),  # for testing purposes
+    'fudpassbot': get_image('demonpet.png'),  # for testing purposes
+    'fudbudwhale': get_image('wale.png'),
+    'fudbudcollector': get_image('collector.png'),
+    'fudbudcertified': get_image('og.png'),
+    'fudpetmaster': get_image('pet-master.png'),
+    'fuddemon': get_image('demonpet.png'),
+    'fuddino': get_image('dino.png'),
+    'fudalien': get_image('cyclops.png'),
+    'fuddaddy': get_image('cookie monster.png'),
+    'fudbat': get_image('bat.png'),
+    'fudduck': get_image('duck.png'),
+    'fudmummy': get_image('mummy.png'),
+    'fudbud': get_image('petog.png'),
+    'fudape': get_image('fudape.png'),
+    'fuddog': get_image('dog.png'),
+    'fudbunny king': get_image('bunny.png'),
+    'fudsquad': get_image('petskull.png'),
 }
